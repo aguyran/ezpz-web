@@ -24,7 +24,7 @@ body {
     font-family:"Alegreya",sans-serif;
     font-size: 30px;
     background-color: #FFDEE9;
-background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+background-image: linear-gradient(0deg, #f0b4c8 0%, #B5FFFC 100%);
     margin-bottom: 0%;
     margin-left: 160px;
     -webkit-background-clip: text;
@@ -48,4 +48,5 @@ img.navbarimg{
 }
 img.navbarimg:hover{
     transform: scale(1.1,1.1);
+    
 }
