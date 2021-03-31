@@ -9,21 +9,61 @@
           href="style.css"
         />
     </head>
+    <script src="fullpage-scroll.js"  type="text/javascript"></script>
+    
     <body>
+        
+
+        
+
+    
+    <div class="wrap">
+      <div id="wrap">
+      <section>
         <div class = "main-heading">
-            <h1 class="animate__animated animate__fadeInLeft">ezpz</h1>
-            <br>
-            <p class="animate__animated animate__fadeInRight">A Group of elite BCA coders,</p>
-            <br>
-            <p class="animate__animated animate__fadeInRight" style="margin-top: 0%;">who knows how to print  "HELLO WORLD".</p>
-        </div>
-        <navbar>
-          <div class = "lists animate__animated animate__fadeInRight">
-            <img  src = "resources/home.png" alt = "home" class = "navbarimg">
-            <img src = "resources/ask-question.png" alt = "contact" class = "navbarimg">
-            <img  src = "resources/home.png" alt = "home" class = "navbarimg">
-            <img src = "resources/contact.png" alt = "contact" class = "navbarimg">
-          </div>
-          </navbar>
+          <h1 class="animate__animated animate__fadeInLeft">ezpz</h1>
+          <br>
+          <p class="animate__animated animate__fadeInRight">A Group of elite BCA coders,</p>
+          <br>
+          <p class="animate__animated animate__fadeInRight" style="margin-top: 0%;">who knows how to print  "HELLO WORLD".</p>
+      </div>
+      
+      </section>
+      <section>Beautiful</section>
+      <section>Full-Page</section>
+      <section>Slideshow</section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      var wrap = document.getElementById('wrap');
+      var fps = new FullPageScroll(wrap);
+      var indicator = document.createElement('div');
+      indicator.id = 'indicator';
+      indicator.className += "animate__animated animate__fadeInRight";
+      var slideIndicators = [];
+      fps.slides.forEach(function(slide, index){
+        var slideIndicator = document.createElement('div');
+        slideIndicator.onclick = function() {
+          fps.goToSlide(index);
+        }
+        if (index === fps.currentSlide) {
+          slideIndicator.className = "active";
+        }
+        indicator.appendChild(slideIndicator);
+        slideIndicators.push(slideIndicator);
+      });
+      document.body.appendChild(indicator);
+      fps.onslide = function() {
+        slideIndicators.forEach(function(slideIndicator, index) {
+          if (index === fps.currentSlide) {
+            slideIndicator.className = "active";
+          } else {
+            slideIndicator.className = "";
+      }
+    });
+  }
+});
+    </script>
     </body>
 </html>
+
