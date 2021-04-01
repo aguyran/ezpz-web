@@ -99,9 +99,7 @@ section {
 
 
 
-section:nth-child(2) {
-  background-image: url('https://source.unsplash.com/jWskS_wLMDo/1920x1080');
-}
+
 
 section:nth-child(3) {
   background-image: url('https://source.unsplash.com/O6vaYviRDoo/1920x1080');
