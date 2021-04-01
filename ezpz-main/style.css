@@ -114,18 +114,19 @@ section:nth-child(4) {
 #indicator {
     background-color: transparent;
   position: absolute;
-  top: 0px;
-  right: 20px;
+  top: 70px;
+  left: 20px;
   height: 100vh;
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   justify-content: center;
-  align-self:flex-start;
+  align-self:flex-end;
 }
 
 #indicator > div {
-  background-color: white;
-  width:10px;
+
+  background-color: rgb(255, 255, 255);
+  width:50px;
   height:10px;
   border-radius: 5px;
   margin: 10px;
@@ -134,4 +135,15 @@ section:nth-child(4) {
 
 #indicator > div.active {
   transform: scale(1.6);
+}
+#sound{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+#sound:hover{
+    cursor: pointer;
+    border: 2px solid #111;
 }

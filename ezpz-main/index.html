@@ -21,7 +21,7 @@
       <div id="wrap">
       <section>
         <div class = "main-heading">
-          <h1 class="animate__animated animate__fadeInLeft">ezpz</h1>
+          <h1 class="animate__animated animate__fadeInLeft">ezpz <button id = "sound" onclick="play()"><img src = "resources/11.png" alt = "how to pronounce" style = "background-image: transparent; width:50px;"/></button></h1>
           <br>
           <p class="animate__animated animate__fadeInRight">A Group of elite BCA coders,</p>
           <br>
@@ -46,7 +46,9 @@
         slideIndicator.onclick = function() {
           fps.goToSlide(index);
         }
+        
         if (index === fps.currentSlide) {
+          slideIndicator.innerHTML = "";
           slideIndicator.className = "active";
         }
         indicator.appendChild(slideIndicator);
@@ -63,6 +65,11 @@
     });
   }
 });
+function play(){
+  var audio = new Audio('resources/ezpz.mp3');
+  audio.play();
+}
+     
     </script>
     </body>
 </html>
