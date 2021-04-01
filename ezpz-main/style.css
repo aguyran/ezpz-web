@@ -130,7 +130,7 @@ section:nth-child(4) {
   border-radius: 5px;
   margin: 10px;
   cursor: pointer;
-  display: none;
+  
 }
 
 #indicator > div.active {
@@ -178,7 +178,7 @@ section:nth-child(4) {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background-color: #23272A;
+  background-color: #fff;
   position: absolute;
   bottom: 135%;
   right: 0;
@@ -198,7 +198,7 @@ section:nth-child(4) {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #23272A;
+  background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -214,7 +214,7 @@ section:nth-child(4) {
 }
 
 .our-team:hover .picture img {
-  box-shadow: 0 0 0 14px #23272A;
+  box-shadow: 0 0 0 14px #fff;
   transform: scale(0.7);
 }
 
@@ -230,7 +230,7 @@ section:nth-child(4) {
   padding: 15px;
   height:auto;
   margin: 0;
-  background-color: #23272A;
+  background-color: #fff;
   position: absolute;
   bottom: -100px;
   left: 0;
@@ -250,13 +250,13 @@ section:nth-child(4) {
   padding: 10px;
   font-size: 17px;
   color: white;
-  background-color:#111
+  background-color:#111;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
 
 .our-team .social li a:hover {
-  background-color:#111
+  background-color:rgb(51, 167, 128);
 }
 
 section.team-main >div.container{
